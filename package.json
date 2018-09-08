@@ -4,9 +4,9 @@
   "description": "kek",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon -w ./src --ext '.ts' --exec babel-node ./src --extensions '.ts'",
-    "build-js": "babel ./src -d dist -x '.ts'",
-    "build-types": "tsc --emitDeclarationOnly",
+    "dev": "npx nodemon -w ./src --ext '.ts' --exec babel-node ./src --extensions \".ts\"",
+    "build-js": "npx babel src --out-dir ./dist -x \".ts\"",
+    "build-types": "npx tsc --emitDeclarationOnly",
     "build": "yarn build-types && yarn build-js"
   },
   "author": "rei",
